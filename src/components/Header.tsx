@@ -31,7 +31,7 @@ const Header = () => {
             <img
               src="/images/Logo-Bonate.png"
               alt="Logo da marca BONATE"
-              className="h-12 w-auto" // Ajuste a altura (h-10) conforme necessário
+              className="h-16 w-auto"
             />
           </a>
 
