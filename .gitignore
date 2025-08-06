@@ -34,3 +34,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts 
+
+# Arquivos de cache e de sistema operacional
+# ---------------------------------
+.DS_Store
+Thumbs.db
