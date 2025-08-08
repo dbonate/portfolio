@@ -6,41 +6,23 @@ import { Briefcase, Calendar, MapPin, ExternalLink } from 'lucide-react'
 const Experience = () => {
   const experiences = [
     {
-      company: 'NTT Data',
-      position: 'Lead Engineer Technology',
+      company: 'AWS',
+      position: 'Cloud',
       period: '08/2022 - 06/2025',
       location: 'São Paulo, SP',
-      description: 'Liderança técnica em projetos de OCR com API-Gateway privado, Lambdas privadas, Cloudvision e Gemini. Administração de AWS, IAC com Terraform, Kubernetes, GitLab CI/CD, ArgoCD e Backstage para catálogo de serviços.',
+      description: 'Liderança técnica em projetos de Cloud e IA.',
       technologies: ['AWS', 'Terraform', 'Kubernetes', 'GitLab', 'ArgoCD', 'Backstage', 'Python'],
       link: '#'
     },
     {
-      company: 'FreteBras',
-      position: 'DevOps Engineer + Tech Lead',
+      company: 'Google',
+      position: 'Cloud Engineer',
       period: '01/2022 - 08/2022',
       location: 'São Paulo, SP',
-      description: 'Administração de AWS e Cloud Terraform, gerenciamento de Kubernetes, implementação de GitLab, Instana, Kong/Konga, Rancher, Grafana, Prometheus e Kafka. Início do projeto "FretePago" Bank.',
+      description: 'Administração de GCP e Cloud Terraform, gerenciamento de Kubernetes.',
       technologies: ['AWS', 'Terraform', 'Kubernetes', 'GitLab', 'Grafana', 'Prometheus', 'Kafka'],
       link: '#'
     },
-    {
-      company: 'Pravaler SA',
-      position: 'Analista DevOps',
-      period: '01/2021 - 12/2021',
-      location: 'São Paulo, SP',
-      description: 'Suporte para desenvolvedores em aplicativos e infraestrutura. Gerenciamento de nuvem Google Cloud Platform.',
-      technologies: ['GCP', 'DevOps', 'Infrastructure', 'Support'],
-      link: '#'
-    },
-    {
-      company: 'Pravaler SA',
-      position: 'Analista de Infraestrutura e Suporte II',
-      period: '06/2018 - 12/2020',
-      location: 'São Paulo, SP',
-      description: 'Administração de AWS e Google Cloud Platform, gerenciamento VMware vSphere, Office 365, EC2, S3, Active Directory, NFS, VPNs, Fortinet, Storages e bancos de dados RDS e CloudSQL.',
-      technologies: ['AWS', 'GCP', 'VMware', 'Active Directory', 'RDS', 'PostgreSQL', 'MySQL'],
-      link: '#'
-    }
   ]
 
   return (
@@ -163,10 +145,10 @@ const Experience = () => {
               className="bg-secondary-50 rounded-xl p-6"
             >
               <h4 className="text-lg font-semibold text-secondary-900 mb-2">
-                MBA em Artificial Intelligence & Bots Engineering
+                Artificial Intelligence
               </h4>
-              <p className="text-secondary-600 mb-2">Faculdade Impacta</p>
-              <p className="text-sm text-secondary-500">Cursando - Conclusão prevista: 09/2025</p>
+              <p className="text-secondary-600 mb-2">USP</p>
+              <p className="text-sm text-secondary-500">09/2025</p>
             </motion.div>
 
             <motion.div
@@ -180,7 +162,7 @@ const Experience = () => {
                 AWS Solutions Architect - Associate
               </h4>
               <p className="text-secondary-600 mb-2">Amazon Web Services</p>
-              <p className="text-sm text-secondary-500">05/2024</p>
+              <p className="text-sm text-secondary-500">07/2024</p>
             </motion.div>
           </div>
         </motion.div>

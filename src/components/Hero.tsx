@@ -67,8 +67,8 @@ const Hero = () => {
               </button>
               
               <a
-                href="/docs/CV_Denis_Oliveira-Devops.docx"
-                download="CV_Denis_Oliveira-Devops.docx"
+                href="/docs/CV_Cloud.docx"
+                download="CV_Cloud.docx"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-secondary flex items-center gap-2"

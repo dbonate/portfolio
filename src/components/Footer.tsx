@@ -29,7 +29,7 @@ const Footer = () => {
               {process.env.NEXT_PUBLIC_NAME || 'Seu Nome'} {/* ← Alterado */}
             </h3>
             <p className="text-secondary-300 mb-6 max-w-md">
-              {process.env.NEXT_PUBLIC_FOOTER_DESCRIPTION || 'Platform Engineer & DevSecOps...'} {/* ← Alterado */}
+              {process.env.NEXT_PUBLIC_FOOTER_DESCRIPTION || '#'} {/* ← Alterado */}
             </p>
             <div className="flex space-x-4">
               <a
