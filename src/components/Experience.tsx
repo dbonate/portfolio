@@ -6,22 +6,49 @@ import { Briefcase, Calendar, MapPin, ExternalLink } from 'lucide-react'
 const Experience = () => {
   const experiences = [
     {
-      company: 'AWS',
-      position: 'Cloud',
-      period: '08/2022 - 06/2025',
+      company: 'RD Saúde',
+      position: 'DevOps Senior',
+      period: '11/2025 - Atual',
       location: 'São Paulo, SP',
       description: 'Liderança técnica em projetos de Cloud e IA.',
       technologies: ['AWS', 'Terraform', 'Kubernetes', 'GitLab', 'ArgoCD', 'Backstage', 'Python'],
       link: '#'
     },
     {
-      company: 'Google',
-      position: 'Cloud Engineer',
-      period: '01/2022 - 08/2022',
+      company: 'Novigo IT',
+      position: 'DevOps Senior',
+      period: '08/2025 - 11/2025',
       location: 'São Paulo, SP',
       description: 'Administração de GCP e Cloud Terraform, gerenciamento de Kubernetes.',
       technologies: ['AWS', 'Terraform', 'Kubernetes', 'GitLab', 'Grafana', 'Prometheus', 'Kafka'],
       link: '#'
+    },
+    {
+      company: 'NTT Data',
+      position: 'Lead Engineer Technology',
+      period: '08/2022 - 06/2025',
+      location: 'São Paulo, SP',
+      description: 'Liderança técnica em projetos de OCR com API-Gateway privado, Lambdas privadas, Cloudvision e Gemini. Administração de AWS, IAC com Terraform, Kubernetes, GitLab CI/CD, ArgoCD e Backstage para catálogo de serviços.',
+      technologies: ['AWS', 'Terraform', 'Kubernetes', 'GitLab', 'ArgoCD', 'Backstage', 'Python'],
+      link: 'https://br.nttdata.com/'
+    },
+    {
+      company: 'FreteBras - FretePago',
+      position: 'DevOps Engineer + Tech Lead',
+      period: '01/2022 - 08/2022',
+      location: 'São Paulo, SP',
+      description: 'Administração de AWS e Cloud Terraform, gerenciamento de Kubernetes, implementação de GitLab, Instana, Kong/Konga, Rancher, Grafana, Prometheus e Kafka. Início do projeto "FretePago" Bank.',
+      technologies: ['AWS', 'Terraform', 'Kubernetes', 'GitLab', 'Grafana', 'Prometheus', 'Kafka'],
+      link: 'https://ib.fretepago.com.br/'
+    },
+    {
+      company: 'Pravaler SA',
+      position: 'Analista DevOps',
+      period: '01/2022 - 08/2022',
+      location: 'São Paulo, SP',
+      description: 'Suporte para desenvolvedores em aplicativos e infraestrutura. Gerenciamento de nuvem Google Cloud Platform.',
+      technologies: ['GCP', 'AWS', 'Kubernetes', 'Docker', 'Github'],
+      link: 'https://www.pravaler.com.br/sobre-o-pravaler/'
     },
   ]
 
@@ -82,7 +109,7 @@ const Experience = () => {
                           </div>
                         </div>
                       </div>
-                      
+
                       <a
                         href={exp.link}
                         target="_blank"
@@ -135,7 +162,7 @@ const Experience = () => {
           <h3 className="text-2xl font-semibold text-secondary-900 mb-8 text-center">
             Formação Acadêmica
           </h3>
-          
+
           <div className="grid md:grid-cols-2 gap-8">
             <motion.div
               initial={{ opacity: 0, x: -50 }}
@@ -145,10 +172,10 @@ const Experience = () => {
               className="bg-secondary-50 rounded-xl p-6"
             >
               <h4 className="text-lg font-semibold text-secondary-900 mb-2">
-                Artificial Intelligence
+                MBA in Artificial Intelligence
               </h4>
-              <p className="text-secondary-600 mb-2">USP</p>
-              <p className="text-sm text-secondary-500">09/2025</p>
+              <p className="text-secondary-600 mb-2">Falculdade Impacta</p>
+              <p className="text-sm text-secondary-500">08/2025</p>
             </motion.div>
 
             <motion.div
