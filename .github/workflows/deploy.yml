@@ -28,19 +28,19 @@ jobs:
 
     - name: Create initialized .env file
       run: |
-        echo "NEXT_PUBLIC_NAME=${{ vars.NEXT_PUBLIC_NAME }}" >> .env
-        echo "NEXT_PUBLIC_Title=${{ vars.NEXT_PUBLIC_TITLE }}" >> .env
-        echo "NEXT_PUBLIC_DESCRIPTION=${{ vars.NEXT_PUBLIC_DESCRIPTION }}" >> .env
-        echo "NEXT_PUBLIC_EMAIL=${{ vars.NEXT_PUBLIC_EMAIL }}" >> .env
-        echo "NEXT_PUBLIC_PHONE=${{ vars.NEXT_PUBLIC_PHONE }}" >> .env
-        echo "NEXT_PUBLIC_LOCATION=${{ vars.NEXT_PUBLIC_LOCATION }}" >> .env
-        echo "NEXT_PUBLIC_LINKEDIN=${{ vars.NEXT_PUBLIC_LINKEDIN }}" >> .env
-        echo "NEXT_PUBLIC_GITHUB=${{ vars.NEXT_PUBLIC_GITHUB }}" >> .env
-        echo "NEXT_PUBLIC_TWITTER=${{ vars.NEXT_PUBLIC_TWITTER }}" >> .env
-        echo "NEXT_PUBLIC_AGE=${{ vars.NEXT_PUBLIC_AGE }}" >> .env
-        echo "NEXT_PUBLIC_EDUCATION=${{ vars.NEXT_PUBLIC_EDUCATION }}" >> .env
-        echo "NEXT_PUBLIC_CITY=${{ vars.NEXT_PUBLIC_CITY }}" >> .env
-        echo "NEXT_PUBLIC_NAME_COMPLETO=${{ vars.NEXT_PUBLIC_NAME_COMPLETO }}" >> .env
+        echo "NEXT_PUBLIC_NAME=${{ vars.NEXT_PUBLIC_NAME }}" >> .env.local
+        echo "NEXT_PUBLIC_Title=${{ vars.NEXT_PUBLIC_TITLE }}" >> .env.local
+        echo "NEXT_PUBLIC_DESCRIPTION=${{ vars.NEXT_PUBLIC_DESCRIPTION }}" >> .env.local
+        echo "NEXT_PUBLIC_EMAIL=${{ vars.NEXT_PUBLIC_EMAIL }}" >> .env.local
+        echo "NEXT_PUBLIC_PHONE=${{ vars.NEXT_PUBLIC_PHONE }}" >> .env.local
+        echo "NEXT_PUBLIC_LOCATION=${{ vars.NEXT_PUBLIC_LOCATION }}" >> .env.local
+        echo "NEXT_PUBLIC_LINKEDIN=${{ vars.NEXT_PUBLIC_LINKEDIN }}" >> .env.local
+        echo "NEXT_PUBLIC_GITHUB=${{ vars.NEXT_PUBLIC_GITHUB }}" >> .env.local
+        echo "NEXT_PUBLIC_TWITTER=${{ vars.NEXT_PUBLIC_TWITTER }}" >> .env.local
+        echo "NEXT_PUBLIC_AGE=${{ vars.NEXT_PUBLIC_AGE }}" >> .env.local
+        echo "NEXT_PUBLIC_EDUCATION=${{ vars.NEXT_PUBLIC_EDUCATION }}" >> .env.local
+        echo "NEXT_PUBLIC_CITY=${{ vars.NEXT_PUBLIC_CITY }}" >> .env.local
+        echo "NEXT_PUBLIC_NAME_COMPLETO=${{ vars.NEXT_PUBLIC_NAME_COMPLETO }}" >> .env.local
 
     - name: Build
       run: npm run build
