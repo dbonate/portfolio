@@ -44,24 +44,13 @@ jobs:
 
     - name: Build
       run: npm run build
-
-    - name: Debug AWS_REGION
-      run: |
-        echo "AWS_REGION secret exists: ${{ secrets.AWS_REGION != '' }}"
-        echo "AWS_REGION value: ${{ secrets.AWS_REGION }}"
-
-    - name: Check Variable Presence
-      run: |
-        echo "Region via vars: [${{ vars.AWS_REGION }}]"
-        echo "Region via secrets: [${{ secrets.AWS_REGION }}]"
-        echo "Check if ENV exists: [${{ env.AWS_REGION }}]"
         
     - name: Configure AWS Credentials
       uses: aws-actions/configure-aws-credentials@v4
       with:
         aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        aws-region: ${{ vars.AWS_REGION }}
+        aws-region: us-east-1
 
     - name: Deploy to S3
       run: aws s3 sync out/ s3://${{ vars.AWS_S3_BUCKET }} --delete
