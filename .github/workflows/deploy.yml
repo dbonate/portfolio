@@ -45,6 +45,17 @@ jobs:
     - name: Build
       run: npm run build
 
+    - name: Debug AWS_REGION
+      run: |
+        echo "AWS_REGION secret exists: ${{ secrets.AWS_REGION != '' }}"
+        echo "AWS_REGION value: ${{ secrets.AWS_REGION }}"
+
+    - name: Check Variable Presence
+      run: |
+        echo "Region via vars: [${{ vars.AWS_REGION }}]"
+        echo "Region via secrets: [${{ secrets.AWS_REGION }}]"
+        echo "Check if ENV exists: [${{ env.AWS_REGION }}]"
+        
     - name: Configure AWS Credentials
       uses: aws-actions/configure-aws-credentials@v4
       with:
