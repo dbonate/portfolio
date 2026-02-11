@@ -41,6 +41,23 @@ jobs:
         echo "NEXT_PUBLIC_EDUCATION=${{ vars.NEXT_PUBLIC_EDUCATION }}" >> .env.local
         echo "NEXT_PUBLIC_CITY=${{ vars.NEXT_PUBLIC_CITY }}" >> .env.local
         echo "NEXT_PUBLIC_NAME_COMPLETO=${{ vars.NEXT_PUBLIC_NAME_COMPLETO }}" >> .env.local
+        echo "ENV LOCAL"
+        cat .env.local
+        echo "NEXT_PUBLIC_NAME=${{ vars.NEXT_PUBLIC_NAME }}" >> .env.production
+        echo "NEXT_PUBLIC_Title=${{ vars.NEXT_PUBLIC_TITLE }}" >> .env.production
+        echo "NEXT_PUBLIC_DESCRIPTION=${{ vars.NEXT_PUBLIC_DESCRIPTION }}" >> .env.production
+        echo "NEXT_PUBLIC_EMAIL=${{ vars.NEXT_PUBLIC_EMAIL }}" >> .env.production
+        echo "NEXT_PUBLIC_PHONE=${{ vars.NEXT_PUBLIC_PHONE }}" >> .env.production
+        echo "NEXT_PUBLIC_LOCATION=${{ vars.NEXT_PUBLIC_LOCATION }}" >> .env.production
+        echo "NEXT_PUBLIC_LINKEDIN=${{ vars.NEXT_PUBLIC_LINKEDIN }}" >> .env.production
+        echo "NEXT_PUBLIC_GITHUB=${{ vars.NEXT_PUBLIC_GITHUB }}" >> .env.production
+        echo "NEXT_PUBLIC_TWITTER=${{ vars.NEXT_PUBLIC_TWITTER }}" >> .env.production
+        echo "NEXT_PUBLIC_AGE=${{ vars.NEXT_PUBLIC_AGE }}" >> .env.production
+        echo "NEXT_PUBLIC_EDUCATION=${{ vars.NEXT_PUBLIC_EDUCATION }}" >> .env.production
+        echo "NEXT_PUBLIC_CITY=${{ vars.NEXT_PUBLIC_CITY }}" >> .env.production
+        echo "NEXT_PUBLIC_NAME_COMPLETO=${{ vars.NEXT_PUBLIC_NAME_COMPLETO }}" >> .env.production
+        echo "ENV PRODUCTION"
+        cat .env.production
 
     - name: Build
       run: npm run build
