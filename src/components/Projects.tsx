@@ -10,20 +10,31 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: 'OCR System with AI',
-      description: 'Sistema de OCR inteligente para validação de Docs, utilizando Gemini AI. A solução é construída em uma arquitetura serverless segura com API Gateway e Lambdas privadas na AWS.',
-      image: '/images/logo-e-1.jpg',
-      category: 'devops',
-      technologies: ['AWS', 'Lambda','API Gateway', 'Cloudvision', 'Gemini AI', 'Terraform'],
+      title: 'Migração de E-commerce Magento da Adobe Cloud para AWS',
+      description: 'Migração de E-commerce Magento da Adobe Cloud para AWS, com arquitetura altamente escalável e pipeline de CI/CD totalmente automatizado via GitLab e ArgoCD + Keda.',
+      image: '/images/logo-rdsaude.svg',
+      category: 'cloud',
+      technologies: ['AWS', 'Magento (MageOS)', 'PHP', 'MySQL', 'Redis', 'Elasticsearch', 'GitLab CI', 'ArgoCD', 'Keda', 'Terraform', 'Kubernetes'],
       //liveUrl: '#',
       //githubUrl: '#',
       featured: true
     },
     {
       id: 2,
+      title: 'OCR System with AI',
+      description: 'Sistema de OCR inteligente para validação de Docs, utilizando Gemini AI. A solução é construída em uma arquitetura serverless segura com API Gateway e Lambdas privadas na AWS.',
+      image: '/images/logo-rdsaude.svg',
+      category: 'devops',
+      technologies: ['AWS', 'Lambda', 'API Gateway', 'Cloudvision', 'Gemini AI', 'Terraform'],
+      //liveUrl: '#',
+      //githubUrl: '#',
+      featured: true
+    },
+    {
+      id: 3,
       title: 'DevPortal - Backstage',
       description: 'Catálogo de serviços de TI com Backstage, implementando autoatendimento para desenvolvedores e centralização de recursos.',
-      image: '/images/logo-e-1.jpg',
+      image: '/images/logo-rdsaude.svg',
       category: 'platform',
       technologies: ['Backstage', 'Kubernetes', 'Kustomize', 'GitLab CI/CD', 'Terraform'],
       //liveUrl: '#',
@@ -31,10 +42,10 @@ const Projects = () => {
       featured: true
     },
     {
-      id: 3,
+      id: 4,
       title: 'Cloud Migration Strategy',
       description: 'Migração de microserviços (Java, Node.js) on-premise para AWS, incluindo Rabbitmq, Redis...',
-      image: '/images/logo-e-1.jpg',
+      image: '/images/logo-rdsaude.svg',
       category: 'cloud',
       technologies: ['AWS', 'Kubernetes', 'VMware', 'RDS', 'Terraform'],
       liveUrl: '#',
@@ -42,10 +53,10 @@ const Projects = () => {
       featured: false
     },
     {
-      id: 4,
+      id: 5,
       title: 'CoE DevOps Implementation',
       description: 'Centre of Excellence DevOps com padronização de processos, automação de CI/CD e implementação de melhores práticas.',
-      image: '/images/logo-e-1.jpg',
+      image: '/images/logo-rdsaude.svg',
       category: 'devops',
       technologies: ['GitLab', 'ArgoCD', 'Terraform', 'Kubernetes'],
       //liveUrl: '#',
@@ -53,10 +64,10 @@ const Projects = () => {
       featured: false
     },
     {
-      id: 5,
+      id: 6,
       title: 'FretePago Bank',
       description: 'Plataforma bancária para pagamentos de frete com arquitetura de microserviços, monitoramento e alta disponibilidade.',
-      image: '/images/logo-e-2.jpg',
+      image: '/images/logo-fretebras.png',
       category: 'devops',
       technologies: ['AWS', 'Kubernetes', 'Helm-charts', 'Kafka', 'Grafana', 'Prometheus'],
       liveUrl: 'https://ib.fretepago.com.br/login',
@@ -64,10 +75,10 @@ const Projects = () => {
       featured: false
     },
     {
-      id: 6,
+      id: 7,
       title: 'Monitoring & Observability',
       description: 'Sistema completo de monitoramento com Grafana, Prometheus, Instana e alertas automatizados para infraestrutura crítica.',
-      image: '/images/logo-e-2.jpg',
+      image: '/images/logo-fretebras.png',
       category: 'monitoring',
       technologies: ['Grafana', 'Prometheus', 'Instana', 'Kubernetes', 'Python'],
       //liveUrl: '#',
@@ -75,10 +86,10 @@ const Projects = () => {
       featured: false
     },
     {
-      id: 7,
+      id: 8,
       title: 'Disaster Recovery',
       description: 'Solução de Disaster Recovery (DR) totalmente automatizada na Google Cloud Platform (GCP), garantindo a continuidade do negócio. A plataforma orquestra o failover para uma região secundária, alcançando um RTO (Recovery Time Objective) de segundos em caso de indisponibilidade da produção, seja por falha regional ou de cluster GKE.',
-      image: '/images/logo-e-3.jpg',
+      image: '/images/logo-pravaler.webp',
       category: 'monitoring',
       technologies: ['Grafana', 'Prometheus', 'Instana', 'Kubernetes', 'Python'],
       //liveUrl: '#',
@@ -86,10 +97,10 @@ const Projects = () => {
       featured: true
     },
     {
-      id: 8,
+      id: 9,
       title: 'Cloud Migration Strategy',
       description: 'Migração completa de infraestrutura e serviços Onpremises e AWS para GCP.',
-      image: '/images/logo-e-3.jpg',
+      image: '/images/logo-pravaler.webp',
       category: 'cloud',
       technologies: ['AWS', 'GCP', 'Kubernetes', 'VMware', 'Active Directory', 'RDS', 'Terraform'],
       //liveUrl: '#',
@@ -97,13 +108,13 @@ const Projects = () => {
       featured: false
     },
     {
-      id: 9,
+      id: 10,
       title: 'Portfólio Pessoal com CI/CD na AWS',
       description: 'Este portfólio é um projeto de engenharia de plataforma, construído com Next.js e hospedado em uma arquitetura serverless na AWS, com pipeline de CI/CD totalmente automatizado via GitHub Actions.',
-      image: '/images/Logo1.png',
+      image: '/images/Logo-Bonate.png',
       category: 'cloud',
       technologies: ['AWS (S3, CloudFront, ACM)', 'Next.js', 'TypeScript', 'Tailwind CSS', 'GitHub Actions (CI/CD)', 'IA Generativa'],
-      liveUrl: 'https://meu-site.com.br',
+      liveUrl: 'https://denis.dlbonate.com.br',
       githubUrl: 'https://github.com/dbonate/portfolio.git',
       featured: true
     }
@@ -117,8 +128,8 @@ const Projects = () => {
     { id: 'monitoring', label: 'Monitoring' }
   ]
 
-  const filteredProjects = activeFilter === 'all' 
-    ? projects 
+  const filteredProjects = activeFilter === 'all'
+    ? projects
     : projects.filter(project => project.category === activeFilter)
 
   return (
@@ -151,11 +162,10 @@ const Projects = () => {
             <button
               key={filter.id}
               onClick={() => setActiveFilter(filter.id)}
-              className={`px-6 py-2 rounded-full font-medium transition-all duration-200 ${
-                activeFilter === filter.id
-                  ? 'bg-primary-600 text-white shadow-lg'
-                  : 'bg-white text-secondary-600 hover:bg-primary-50 hover:text-primary-600'
-              }`}
+              className={`px-6 py-2 rounded-full font-medium transition-all duration-200 ${activeFilter === filter.id
+                ? 'bg-primary-600 text-white shadow-lg'
+                : 'bg-white text-secondary-600 hover:bg-primary-50 hover:text-primary-600'
+                }`}
             >
               {filter.label}
             </button>
@@ -180,7 +190,7 @@ const Projects = () => {
                   // Usa a imagem do projeto como fundo
                   backgroundImage: project.image ? `url(${project.image})` : 'none',
                   // Cor de fundo suave que aparece se a imagem não existir
-                  backgroundColor: '#eef2ff' 
+                  backgroundColor: '#eef2ff'
                 }}
               >
                 {!project.image && (
@@ -191,7 +201,7 @@ const Projects = () => {
                     </div>
                   </div>
                 )}
-                
+
                 {project.featured && (
                   <div className="absolute top-4 right-4 bg-primary-600 text-white px-2 py-1 rounded-full text-xs font-medium">
                     Destaque
@@ -204,7 +214,7 @@ const Projects = () => {
                 <h3 className="text-xl font-semibold text-secondary-900 mb-2">
                   {project.title}
                 </h3>
-                
+
                 <p className="text-secondary-600 mb-4 leading-relaxed">
                   {project.description}
                 </p>

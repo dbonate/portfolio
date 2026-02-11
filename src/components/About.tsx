@@ -41,7 +41,7 @@ const About = () => {
             <h3 className="text-2xl font-semibold text-secondary-900 mb-6">
               Informações Pessoais
             </h3>
-            
+
             <div className="space-y-4">
               {personalInfo.map((info, index) => (
                 <motion.div
@@ -75,22 +75,22 @@ const About = () => {
             <h3 className="text-2xl font-semibold text-secondary-900">
               Minha História
             </h3>
-            
+
             <div className="space-y-4 text-secondary-600">
               <p>
-                Minha jornada na tecnologia começou em um lugar improvável: a roça. Em um 
-                ambiente onde poucos acreditavam ser possível, minha paixão por games e 
-                inovação me impulsionou a quebrar barreiras e construir uma carreira como 
-                Engenheiro DevOps na maior cidade do país. Hoje, com mais de 12 anos de 
+                Minha jornada na tecnologia começou em um lugar improvável: a roça. Em um
+                ambiente onde poucos acreditavam ser possível, minha paixão por novas tecnologias, games e
+                me impulsionou a quebrar barreiras e construir uma carreira como
+                Engenheiro DevOps na maior cidade do país. Hoje, com mais de 13 anos de
                 experiência, transformo essa mesma paixão em soluções de alta performance.
               </p>
-              
+
               <p>
                 Para mim, a tecnologia de ponta — seja arquitetura cloud, automação ou CI/CD — funciona com a mesma lógica de uma corrida de Fórmula 1: cada segundo, cada otimização e cada decisão estratégica contam. É com essa mentalidade, inspirada nas pistas e na lógica dos games, que abordo cada projeto, utilizando ferramentas como Python, Kubernetes e as principais plataformas de cloud para garantir entregas rápidas e eficientes.
               </p>
-              
+
               <p>
-                Acredito que o talento não tem CEP. Por ter vivido essa transformação, minha missão é ser a ponte para outros que também sonham com a área de TI. Dedico meu tempo a descomplicar o universo da tecnologia e a mentorar novos talentos, provando que, com a direção certa, qualquer um pode cruzar a linha de chegada.                
+                Acredito que o talento não tem CEP. Por ter vivido essa transformação, minha missão é ser a ponte para outros que também sonham com a área de TI. Dedico meu tempo a descomplicar o universo da tecnologia e a mentorar novos talentos, provando que, com a direção certa, qualquer um pode cruzar a linha de chegada.
               </p>
             </div>
 

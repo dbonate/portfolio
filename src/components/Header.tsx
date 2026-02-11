@@ -29,7 +29,7 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           <a href="#home" onClick={() => scrollToSection('#home')} className="cursor-pointer">
             <img
-              src="/images/Logo1.png"
+              src="/images/Logo-Bonate.png"
               alt="Logo 1"
               className="h-16 w-auto"
             />
