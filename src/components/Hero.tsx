@@ -42,7 +42,7 @@ const Hero = () => {
             >
               {process.env.NEXT_PUBLIC_TITLE || 'Desenvolvedor Full Stack'}
             </motion.h2>
-            
+
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -65,7 +65,7 @@ const Hero = () => {
                 <Mail className="h-5 w-5" />
                 Entre em Contato
               </button>
-              
+
               <a
                 href="/docs/CV_Cloud.docx"
                 download="CV_Cloud.docx"
@@ -115,12 +115,12 @@ const Hero = () => {
               <div className="absolute inset-0 bg-gradient-to-br from-primary-400 to-primary-600 rounded-full opacity-20 animate-pulse"></div>
               <div className="absolute inset-4 bg-gradient-to-br from-primary-300 to-primary-500 rounded-full opacity-30 animate-pulse" style={{ animationDelay: '0.5s' }}></div>
               <div className="absolute inset-8 bg-gradient-to-br from-primary-200 to-primary-400 rounded-full opacity-40 animate-pulse" style={{ animationDelay: '1s' }}></div>
-              
+
               {/* Container da Imagem de Perfil */}
               <div className="absolute inset-12 rounded-full overflow-hidden">
-                <img 
-                  src="/images/Denis.jpg" 
-                  alt="Denis Souza Bonate de Oliveira"
+                <img
+                  src="/images/Denis.jpg"
+                  alt="Denis Souza"
                   className="w-full h-full object-cover"
                 />
               </div>
