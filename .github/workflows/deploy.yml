@@ -1,9 +1,9 @@
 name: Deploy to S3
 
 on:
-  push:
-    branches:
-      - main
+  # push:
+  #   branches:
+  #     - main
   pull_request:
     branches:
       - main
@@ -41,7 +41,7 @@ jobs:
         echo "NEXT_PUBLIC_EDUCATION=${{ vars.NEXT_PUBLIC_EDUCATION }}" >> .env.local
         echo "NEXT_PUBLIC_CITY=${{ vars.NEXT_PUBLIC_CITY }}" >> .env.local
         echo "NEXT_PUBLIC_NAME_COMPLETO=${{ vars.NEXT_PUBLIC_NAME_COMPLETO }}" >> .env.local
-        
+
     - name: Build
       run: npm run build
         
