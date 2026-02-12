@@ -66,16 +66,13 @@ const Hero = () => {
                 Entre em Contato
               </button>
 
-              <a
-                href="/docs/CV_Cloud.docx"
-                download="CV_Cloud.docx"
-                target="_blank"
-                rel="noopener noreferrer"
+              <button
+                onClick={scrollToContact}
                 className="btn-secondary flex items-center gap-2"
               >
                 <Download className="h-5 w-5" />
                 Download CV
-              </a>
+              </button>
             </motion.div>
 
             <motion.div
