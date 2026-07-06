@@ -10,10 +10,10 @@ const Skills = () => {
       title: 'Cloud & DevOps',
       skills: [
         { name: 'AWS', level: 95 },
-        { name: 'Google Cloud Platform', level: 85 },
+        { name: 'Google Cloud Platform', level: 90 },
         { name: 'Kubernetes', level: 94 },
-        { name: 'Terraform', level: 85 },
-        { name: 'Docker', level: 85 },
+        { name: 'Terraform', level: 92 },
+        { name: 'Docker', level: 90 },
       ]
     },
     {
@@ -21,18 +21,18 @@ const Skills = () => {
       title: 'CI/CD & Platform',
       skills: [
         { name: 'GitLab CI/CD', level: 94 },
-        { name: 'ArgoCD', level: 85 },
+        { name: 'ArgoCD', level: 95 },
         { name: 'Jenkins', level: 80 },
         { name: 'Backstage', level: 80 },
-        { name: 'Helm', level: 85 },
+        { name: 'Helm', level: 80 },
       ]
     },
     {
       icon: Database,
       title: 'Infrastructure & Monitoring',
       skills: [
-        { name: 'Grafana', level: 90 },
-        { name: 'Prometheus', level: 80 },
+        { name: 'Grafana', level: 80 },
+        { name: 'Prometheus', level: 75 },
         { name: 'Instana', level: 75 },
         { name: 'VMware vSphere', level: 85 },
         { name: 'Active Directory', level: 80 },
