@@ -3,65 +3,73 @@
 import { motion } from 'framer-motion'
 import { Code, Database, Cloud, Palette, Cpu } from 'lucide-react'
 
-const Skills = () => {
-  const skillCategories = [
-    {
-      icon: Cloud,
-      title: 'Cloud & DevOps',
-      skills: [
-        { name: 'AWS', level: 95 },
-        { name: 'Google Cloud Platform', level: 90 },
-        { name: 'Kubernetes', level: 94 },
-        { name: 'Terraform', level: 92 },
-        { name: 'Docker', level: 90 },
-      ]
-    },
-    {
-      icon: Code,
-      title: 'CI/CD & Platform',
-      skills: [
-        { name: 'GitLab CI/CD', level: 94 },
-        { name: 'ArgoCD', level: 95 },
-        { name: 'Jenkins', level: 80 },
-        { name: 'Backstage', level: 80 },
-        { name: 'Helm', level: 80 },
-      ]
-    },
-    {
-      icon: Database,
-      title: 'Infrastructure & Monitoring',
-      skills: [
-        { name: 'Grafana', level: 80 },
-        { name: 'Prometheus', level: 75 },
-        { name: 'Instana', level: 75 },
-        { name: 'VMware vSphere', level: 85 },
-        { name: 'Active Directory', level: 80 },
-      ]
-    },
-    {
-      icon: Cpu,
-      title: 'Programming & Scripts',
-      skills: [
-        { name: 'Python', level: 85 },
-        { name: 'Bash Scripting', level: 90 },
-        { name: 'YAML', level: 94 },
-        { name: 'JSON', level: 90 },
-        { name: 'Linux Administration', level: 94 },
-      ]
-    },
-    {
-      icon: Palette,
-      title: 'Security & Compliance',
-      skills: [
-        { name: 'DevSecOps', level: 85 },
-        { name: 'Security Scanning', level: 80 },
-        { name: 'Compliance', level: 75 },
-        { name: 'VPN & Firewall', level: 85 },
-        { name: 'IAM & RBAC', level: 90 },
-      ]
-    }
-  ]
+// Constantes movidas para fora do componente para melhor performance (evita re-renderizações desnecessárias)
+const skillCategories = [
+  {
+    icon: Cloud,
+    title: 'Cloud & DevOps',
+    skills: [
+      { name: 'AWS', width: 95, levelText: 'Especialista' },
+      { name: 'Google Cloud Platform', width: 90, levelText: 'Especialista' },
+      { name: 'Oracle Cloud (OCI)', width: 85, levelText: 'Avançado' },
+      { name: 'Kubernetes', width: 94, levelText: 'Especialista' },
+      { name: 'Terraform & Crossplane', width: 92, levelText: 'Especialista' },
+    ]
+  },
+  {
+    icon: Code,
+    title: 'CI/CD & Platform',
+    skills: [
+      { name: 'GitLab CI/CD & ArgoCD', width: 95, levelText: 'Especialista' },
+      { name: 'Backstage (IDP)', width: 85, levelText: 'Avançado' },
+      { name: 'Docker & Helm', width: 90, levelText: 'Especialista' },
+      { name: 'Jenkins', width: 75, levelText: 'Avançado' },
+    ]
+  },
+  {
+    icon: Database,
+    title: 'Infrastructure & Data',
+    skills: [
+      { name: 'Mensageria (Kafka/SQS/RabbitMQ)', width: 85, levelText: 'Avançado' },
+      { name: 'Grafana & Prometheus', width: 85, levelText: 'Avançado' },
+      { name: 'Datadog & Instana', width: 80, levelText: 'Avançado' },
+      { name: 'VMware vSphere & AD', width: 85, levelText: 'Avançado' },
+    ]
+  },
+  {
+    icon: Cpu,
+    title: 'Programming & Scripts',
+    skills: [
+      { name: 'Shell Script', width: 95, levelText: 'Especialista' },
+      { name: 'Python', width: 85, levelText: 'Avançado' },
+      { name: 'YAML & JSON', width: 95, levelText: 'Especialista' },
+      { name: 'NodeJS / Java', width: 65, levelText: 'Intermediário' },
+    ]
+  },
+  {
+    icon: Palette,
+    title: 'Security & Compliance',
+    skills: [
+      { name: 'DevSecOps & Shift-Left', width: 90, levelText: 'Especialista' },
+      { name: 'IAM & RBAC', width: 90, levelText: 'Especialista' },
+      { name: 'Security Scanning', width: 85, levelText: 'Avançado' },
+      { name: 'VPN & Firewall', width: 85, levelText: 'Avançado' },
+    ]
+  }
+]
 
+const otherCompetencies = [
+  'Internal Developer Platform (IDP)',
+  'IaC Governance & Standardization',
+  'High Availability & Resiliency',
+  'Event-Driven Architecture (EDA)',
+  'Multi-Cloud Strategy',
+  'Microservices Architecture',
+  'Monitoring & Observability',
+  'Disaster Recovery'
+]
+
+const Skills = () => {
   return (
     <section id="skills" className="section-padding bg-secondary-50">
       <div className="container-custom">
@@ -76,7 +84,7 @@ const Skills = () => {
             Habilidades & Tecnologias
           </h2>
           <p className="text-lg text-secondary-600 max-w-2xl mx-auto">
-            Conheça as tecnologias e ferramentas que utilizo para criar soluções inovadoras
+            Conheça as tecnologias e abordagens arquiteturais que utilizo para criar plataformas robustas e escaláveis.
           </p>
         </motion.div>
 
@@ -112,14 +120,14 @@ const Skills = () => {
                       <span className="text-sm font-medium text-secondary-700">
                         {skill.name}
                       </span>
-                      <span className="text-sm text-secondary-500">
-                        {skill.level}%
+                      <span className="text-sm font-semibold text-primary-600">
+                        {skill.levelText}
                       </span>
                     </div>
                     <div className="w-full bg-secondary-200 rounded-full h-2">
                       <motion.div
                         initial={{ width: 0 }}
-                        whileInView={{ width: `${skill.level}%` }}
+                        whileInView={{ width: `${skill.width}%` }}
                         transition={{ duration: 1, delay: skillIndex * 0.1 }}
                         viewport={{ once: true }}
                         className="bg-gradient-to-r from-primary-500 to-primary-600 h-2 rounded-full"
@@ -141,30 +149,21 @@ const Skills = () => {
           className="mt-16 bg-white rounded-xl p-8 shadow-lg"
         >
           <h3 className="text-2xl font-semibold text-secondary-900 mb-6 text-center">
-            Outras Competências
+            Competências Estratégicas
           </h3>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {[
-              'Platform Engineering',
-              'Infrastructure as Code',
-              'Container Orchestration',
-              'Microservices Architecture',
-              'Cloud Native Applications',
-              'Monitoring & Observability',
-              'Security & Compliance',
-              'Disaster Recovery'
-            ].map((skill, index) => (
+            {otherCompetencies.map((skill, index) => (
               <motion.div
                 key={skill}
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className="flex items-center space-x-2 p-3 bg-secondary-50 rounded-lg"
+                className="flex items-center space-x-2 p-3 bg-secondary-50 rounded-lg hover:bg-secondary-100 transition-colors"
               >
-                <div className="w-2 h-2 bg-primary-500 rounded-full"></div>
-                <span className="text-secondary-700 font-medium">{skill}</span>
+                <div className="w-2 h-2 bg-primary-500 rounded-full flex-shrink-0"></div>
+                <span className="text-secondary-700 font-medium text-sm">{skill}</span>
               </motion.div>
             ))}
           </div>
@@ -174,4 +173,4 @@ const Skills = () => {
   )
 }
 
-export default Skills 
+export default Skills
